@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<h1>JSP를 사용한 동적인 웹페이지</h1>
+		<p>JSP을 사용하면 전달 받은 GET, POST 등의 파라미터 값을 꺼낼 수 있음</p>
+		<p>DB와 연동해서 필요한 동적인 데이터들을 가져올 수 있음</p>
+		<p>JSP의 동작 결과를 웹페이지로 보여줄 수 있음</p>
+		<p>또 JS(JavaScript)를 활용할 수 있고 Jquery도 활용할 수 있음</p>
+		<p>따라서 ajax도 활용할 수 있음</p>
+		<p>이런것들을 활용하면 JSP로 동적인 웹페이지를 만들 수 있음</p>
+		<p>그러나 JSP이 동작하려면 서버가 반드시 필요함</p>
+		<p>JSP는 HTML, CSS, JS 코드를 입력할 수 있고 자바 코드도 입력할 수 있음 / HTML과 Servlet의 장점들을 합친 것</p>
+	</div>
+	
+	<hr>
+	
+	<form action="ex04Result.jsp" method="get">
+		<input type="text" name="value1">
+		
+		+
+		
+		<input type="text" name="value2">
+		
+		=
+		
+		<input type="submit" value="결과보기">
+	</form>
+	
+</body>
+</html>

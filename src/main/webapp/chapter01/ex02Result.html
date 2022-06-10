@@ -5,6 +5,32 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	
+	<h1>계산 결과</h1>
+	
+	<h2></h2>
+	
+	<script src="jquery-3.6.0.min.js"></script>
+	<script>
+		// value1, value2 파라미터 값을 꺼내서
+		let parameters = location.search.substr(1);
+		parameters = parameters.split("&");
+		
+		let value1 = parameters[0];
+		let value2 = parameters[1];
+		
+		value1 = value1.split("=");
+		value1 = value1[1];
+		value1 = parseInt(value1);
+		
+		value2 = value2.split("=");
+		value2 = value2[1];
+		value2 = parseInt(value2);
+		// 더하고
+		let result = value1 + value2;
+		
+		// 그결과를 h2 태그에 출력
+		$("h2").text(result);
+	</script>
 </body>
 </html>
