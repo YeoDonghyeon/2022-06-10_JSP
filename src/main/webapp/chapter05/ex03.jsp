@@ -31,12 +31,11 @@
 		<c:otherwise>
 			<div>10살 미만입니다.</div>
 		</c:otherwise>
-		
-		
+	</c:choose>
+	
 <%-- 		<c:when test="${param.age lt 10 }"> --%>
 <!-- 			<div>10살 미만입니다.</div> -->
 <%-- 		</c:when> --%>
-	</c:choose>
 
 </body>
 </html>
